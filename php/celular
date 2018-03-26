@@ -1,0 +1,61 @@
+
+public class Celular {
+
+	
+	private  $nomeDoUsuario;
+	private $numeroIdentificador;
+	private  estadoDoCelular;
+	private Bateria bateria;
+	
+    public function Celular( $numeroIdentificador, $nomeDoUsuario, Bateria bateria) {
+        $this->numeroIdentificador = $numeroIdentificador;
+        $this->nomeDoUsuario = $nomeDoUsuario;
+        $this->bateria = $bateria;
+        $this->estadoDoCelular = false;
+    }
+    
+    public function ligarCelular(){
+        if($this->estadoDoCelular == false){
+            if(|$bateria.getCarga() >20){
+           echo("Olá,seja Bem vindo: " + $this->nomeDoUsuario);
+
+             bateria.descarregar();
+            bateria.descarregar();
+            $this->estadoDoCelular = true;
+
+            }
+            else if($this->bateria.getCarga() <=20 && this.bateria.getCarga() >0){
+            echo("Bateria Acabando!");
+            }
+       
+         
+    }
+
+     else
+        
+            echo("Celular já está ligado!");
+            }
+            }
+    public function desligarCelular(){
+        if($this->estadoDoCelular == true)
+        {
+
+           echo("Tchau!!!!");
+         
+
+           $this->estadoDoCelular = false;
+        }
+        else
+            echo("Celular já está Desligado");
+    }
+          
+  
+    
+    public function tocarSom(){
+        if($this->estadoDoCelular=true && bateria.getCarga()>=10){
+            echo("Tocando Som!");
+        }
+    }
+    
+   
+}

@@ -1,0 +1,21 @@
+public class Teste {
+	
+    public static void main(String[] args) {
+       $b1 = new Bateria(50);
+       $c1 = new Celular(10,"Fulano de Tal",b1);
+        $c1->desligarCelular();
+
+        echo(b1.getCarga());
+
+
+        $c1->ligarCelular();
+       echo(b1.getCarga());
+
+        $c1->desligarCelular();
+        echo(b1->getCarga());
+       
+        $b1.carregar();
+        $b1.carregar();
+        echo(b1.getCarga());
+        $b1.descarregar();
+        echo(b1.getCarga());
